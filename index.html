@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Portfolie</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Di//an</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Om</a></li>
+                <li><a href="#experience">Erfaring</a></li>
+                <li><a href="#projects">Projekter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Dillan Ahmad</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Om</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Erfaring</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projekter</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+        <img src="./assets/no-profile-picture-icon.png" alt="billede af mig">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hej, jeg er </p>
+            <h1 class="title">Dillan Ahmad</h1>
+            <p class="section__text__p2">Frontend Udvikler</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('.assets/resume-examble.pdf')">
+                Resume
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Kontakt
+                </button>
+            </div>
+            <div id="social-container"></div>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="./assets/linkedin.png" alt="Min LinkedIn profil" class="icon">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="./assets/github.png" alt="Min Github profil" class="icon">
+            </a>
+            
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html> 
