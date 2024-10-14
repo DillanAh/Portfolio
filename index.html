@@ -1,383 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Min Portfolie</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Di//an</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">Om</a></li>
-                <li><a href="#experience">Erfaring</a></li>
-                <li><a href="#projects">Projekter</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </div>
+      <div class="logo">Di//an</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Om</a></li>
+          <li><a href="#experience">Erfaring</a></li>
+          <li><a href="#projects">Projekter</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Dillan Ahmad</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">Om</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Erfaring</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projekter</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
-            </div>
+      <div class="logo">Dillan Ahmad</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Om</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Erfaring</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekter</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-        <img src="./assets/pfp3.png" alt="billede af mig">
+      <div class="section__pic-container">
+        <img src="./assets/pfp3.png" alt="billede af mig" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hej, jeg er</p>
+        <h1 class="title">Dillan Ahmad</h1>
+        <p class="section__text__p2">Multimediedesigner - Frontend</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://raw.githubusercontent.com/DillanAh/CV/main/CV1.pdf', '_blank')"
+          >
+            Resume
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Kontakt
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hej, jeg er </p>
-            <h1 class="title">Dillan Ahmad</h1>
-            <p class="section__text__p2">Multimediedesigner - Frontend</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('https://raw.githubusercontent.com/DillanAh/CV/main/CV1.pdf', '_blank')">
-                    Resume
-                </button>
-                
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">
-                Kontakt
-                </button>
-            </div>
-            <div id="social-container"></div>
-            <a href="https://www.linkedin.com/in/dillan-ahmad-1b726a331/" target="_blank">
-                <img src="./assets/linkedin.png" alt="Min LinkedIn profil" class="icon">
-            </a>
-            <a href="https://github.com/DillanAh" target="_blank">
-                <img src="./assets/github.png" alt="Min Github profil" class="icon">
-            </a>
-            
-        </div>
+        <div id="social-container"></div>
+        <a
+          href="https://www.linkedin.com/in/dillan-ahmad-1b726a331/"
+          target="_blank"
+        >
+          <img
+            src="./assets/linkedin.png"
+            alt="Min LinkedIn profil"
+            class="icon"
+          />
+        </a>
+        <a href="https://github.com/DillanAh" target="_blank">
+          <img src="./assets/github.png" alt="Min Github profil" class="icon" />
+        </a>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Lær mig</p>
-        <h1 class="title">bedre at kende</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <!-- <img 
+      <p class="section__text__p1">Lær mig</p>
+      <h1 class="title">bedre at kende</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- <img 
                 src="./assets/about-pic.png" 
                 alt="Side profil billede" 
                 class="about-pic"
                 /> -->
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                        src="./assets/experience.png" 
-                        alt="Erfaring ikon" 
-                        class="icon"
-                        />
-                        <h3>Erfaring</h3>
-                        <p>1.5 års <br />Frontend Udvikling</p>
-                    </div>
-                    <div class="details-container">
-                      <img 
-                        src="./assets/education.png" 
-                        alt="Uddannelse ikon" 
-                        class="icon"
-                      />
-                        <h3>Uddannelse</h3>
-                        <p>Cph Business Lyngby<br />Academy Profession (AP) Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Jeg er passioneret omkring front-end og UI/UX design og har en solid erfaring med Adobe-programmerne. 
-                        I min fritid nyder jeg at spille computerspil, se film eller høre musik, men jeg sætter selvfølgelig også pris på at tilbringe tid sammen med mine venner.
-                    </p>
-                </div>
-            </div>
         </div>
-        <img 
-         src="./assets/arrow.png" 
-         alt="Pil ned ikon"
-         class="icon arrow"
-         onclick="location.href='./#experience'"
-        />
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Erfaring ikon"
+                class="icon"
+              />
+              <h3>Erfaring</h3>
+              <p>1.5 års <br />Frontend Udvikling</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Uddannelse ikon"
+                class="icon"
+              />
+              <h3>Uddannelse</h3>
+              <p>Cph Business Lyngby<br />Academy Profession (AP) Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Jeg er passioneret omkring front-end og UI/UX design og har en
+              solid erfaring med Adobe-programmerne. I min fritid nyder jeg at
+              spille computerspil, se film eller høre musik, men jeg sætter
+              selvfølgelig også pris på at tilbringe tid sammen med mine venner.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Pil ned ikon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <section id="experience">
-        <p class="section__text__p1">En visuel præsentation af mine,</p>
-        <h1 class="title">Efaringer</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend-Udvikling</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Erfaren</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Erfaren</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Begynder</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>React</h3>
-                                <p>Begynder</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">En visuel præsentation af mine,</p>
+      <h1 class="title">Efaringer</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend-Udvikling</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Erfaren</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend-Udvikling</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Begynder</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>PHP</h3>
-                                <p>Begynder</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Erfaren</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Adobe Programmer</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Photoshop</h3>
-                                <p>Erfaren</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Illustrator</h3>
-                                <p>Øvet</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Premier Pro</h3>
-                                <p>Erfaren</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Begynder</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Andre</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Blenderc</h3>
-                                <p>Øvet</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="checkmark ikon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Erfaren</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Begynder</p>
                 </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend-Udvikling</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Begynder</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Begynder</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Adobe Programmer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Erfaren</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Øvet</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Premier Pro</h3>
+                  <p>Erfaren</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Andre</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blenderc</h3>
+                  <p>Øvet</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark ikon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Erfaren</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img 
-        src="./assets/arrow.png" 
+      </div>
+      <img
+        src="./assets/arrow.png"
         alt="Pil ned ikon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-       />
+      />
     </section>
     <section id="projects">
-        <p class="section__text__p1">Nogle af mine,</p>
-        <h1 class="title">Projektor</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/projekt1.png" 
-                    alt="projekt 1" 
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Trimly</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/DillanAh/Projekt-1?search=1', '_blank'">
-                    Github 
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://oliverfrei.dk/Trimly/index.html', '_blank'">
-                    Live demo
-                    </button>
-                </div>
+      <p class="section__text__p1">Nogle af mine,</p>
+      <h1 class="title">Projektor</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projekt1.png"
+                alt="projekt 1"
+                class="project-img"
+              />
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/twitterclone.png" 
-                    alt="projekt 2" 
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Pipper-projekt</h2>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/DillanAh/Pipper-projekt/tree/main'">
-                        Github
-                    </button>
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="alert('Live demo not available')">
-                        Live demo
-                    </button>
-                </div>
-                
+            <h2 class="experience-sub-title project-title">Trimly</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/DillanAh/Projekt-1?search=1', '_blank'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://oliverfrei.dk/Trimly/index.html', '_blank'"
+              >
+                Live demo
+              </button>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/gameposter.png" 
-                    alt="projekt 3" 
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">UE5 Spil</h2>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://www.figma.com/board/gPbKqe4UsvpNVETh5gVIlc/Dope-%24wagg?node-id=0-1&node-type=canvas&t=TJ5qhWyjIfHVwSu3-0'">
-                        Figma
-                    </button>
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="alert('Live demo not available')">
-                        Live demo
-                    </button>
-                </div>
-                
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/twitterclone.png"
+                alt="projekt 2"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-sub-title project-title">Pipper-projekt</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/DillanAh/Pipper-projekt/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="alert('Live demo not available')"
+              >
+                Live demo
+              </button>
             </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/gameposter.png"
+                alt="projekt 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UE5 Spil</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/board/gPbKqe4UsvpNVETh5gVIlc/Dope-%24wagg?node-id=0-1&node-type=canvas&t=TJ5qhWyjIfHVwSu3-0'"
+              >
+                Figma
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="alert('Live demo not available')"
+              >
+                Live demo
+              </button>
+            </div>
+          </div>
         </div>
-        <img 
-        src="./assets/arrow.png" 
+      </div>
+      <img
+        src="./assets/arrow.png"
         alt="Pil ned ikon"
         class="icon arrow"
         onclick="location.href='./#contact'"
-       />
+      />
     </section>
     <section id="contact">
-        <p class="section__text__p1">For mere information,</p>
-        <h1 class="title">Kontakt mig</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                    src="./assets/email.png" 
-                    alt="Email ikon" 
-                    class="icon contact-icon email-icon"
-                />
-                <p>
-                    <a href="mailto:Dillan99@live.dk">Dillan99@live.dk</a>
-                </p>
-            </div>
-            
-            <div class="contact-info-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="Linkedin ikon" 
-                    class="icon contact-icon"
-                />
-                <p>
-                    <a href="https://www.linkedin.com/in/dillan-ahmad-1b726a331/" target="_blank">LinkedIn</a>
-                </p>
-            </div>
-            
+      <p class="section__text__p1">For mere information,</p>
+      <h1 class="title">Kontakt mig</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email ikon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:Dillan99@live.dk">Dillan99@live.dk</a>
+          </p>
         </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Linkedin ikon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/dillan-ahmad-1b726a331/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div nav-links-container>
-                <ul class="nav-links">
-                    <li><a href="#about">Om</a></li>
-                    <li><a href="#experience">Erfaring</a></li>
-                    <li><a href="#projects">Projekter</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright © 2024 Dillan Ahmad. All rights reserved.</p>
+      <nav>
+        <div nav-links-container>
+          <ul class="nav-links">
+            <li><a href="#about">Om</a></li>
+            <li><a href="#experience">Erfaring</a></li>
+            <li><a href="#projects">Projekter</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2024 Dillan Ahmad. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
