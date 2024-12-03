@@ -223,6 +223,8 @@ section {
   overflow: hidden; /* Ensures the content (image) stays within the round shape */
 }
 
+
+
 .section__pic-container img {
   width: 100%;
   height: 100%;
@@ -336,8 +338,22 @@ btn-color-2 {
   display: flex;
 }
 
+/* Styling for the image */
 .about-pic {
-  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container */
+  border-radius: 20px; /* Adjust the rounding of the corners as desired */
+}
+
+.section__pic-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the image to the top */
+  width: 400px; /* Increased size */
+  height: 400px; /* Match width for a perfect square */
+  margin: 0 auto;
+  overflow: hidden; /* Ensures the image fits within the rounded corners */
 }
 
 .arrow {
@@ -359,12 +375,6 @@ btn-color-2 {
 .section-container {
   gap: 4rem;
   height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 #experience {
@@ -395,9 +405,15 @@ btn-color-2 {
 
 article {
   display: flex;
+  align-items: center; /* Ensures icon and text are vertically aligned */
+  gap: 1rem; /* Adjust space between icon and text */
   width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+}
+
+article img.icon {
+  width: 30px; /* Set fixed width for icon */
+  height: 30px; /* Set fixed height for icon */
+  object-fit: contain; /* Ensures the icon maintains its aspect ratio */
 }
 
 article .icon {
